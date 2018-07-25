@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
     <!--<link rel="stylesheet" href="css/base.css">-->
     <script src="js/index.js"></script>
+    <script src="js/animate.js"></script>
     <title>小米商城</title>
     <!--怎么在标题里引icon的logo-->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -568,7 +569,7 @@
 <!--banner开始-->
     <section id="banner">
         <ul class="banner_bg">
-            <li>
+            <li style="z-index: 9;">
                 <a href="">
                     <img src="img/xmad_15248221330196_tvCXl.jpg" alt="">
                 </a>
@@ -1708,13 +1709,19 @@
             </ul>
         </aside>
         <ul class="circle">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li style="background: #fff;"><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
+            <li><a href="javascript:;"></a></li>
         </ul>
-        <a href="" class="btn_left"></a>
-        <a href="" class="btn_right"></a>
+        <div class="btn_left">
+            <a href="javascript:;"></a>
+        </div>
+        <div class="btn_right">
+            <a href="javascript:;"></a>
+        </div>
+
         <!--轮播图开始-->
         <!--<div id="banner_right">-->
             <!--<div class="swiper-container">-->
@@ -1839,66 +1846,114 @@
 <!--小米闪购开始-->
     <section id="str_product">
         <div id="str_text">
-            <h2>小米明星单品</h2>
+            <h2>小米闪购</h2>
             <div id="str_text_right">
-                <a href=""><i class="iconfont icon-left"></i></a>
-                <a href=""><i class="iconfont icon-right"></i></a>
+                <a href="javascript:;"><i class="iconfont icon-left"></i></a>
+                <a href="javascript:;"><i class="iconfont icon-right"></i></a>
             </div>
         </div>
         <div class="product">
-           <ul>
-               <li class="product1">
-                   <a href=""></a>
-                   <div class="pro">
-                       <a href="" id="pro1">
-                           <img src="img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg" width="160px" height="160px"  alt="小米MIX2" title="小米MIX2">
-                       </a>
-                       <h3>小米MIX2</h3>
-                       <h4>全面屏2.0,5.99大屏</h4>
-                       <p>3299元起</p>
-                   </div>
-               </li>
-               <li class="product2">
-                   <div class="pro">
-                       <a href="" id="pro2" >
-                           <img src="img/312cd1f8-2255-cbb1-9cb3-3e24fc6ab571.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
-                       </a>
-                       <h3>小米MIX2</h3>
-                       <h4>全面屏2.0,5.99大屏</h4>
-                       <p>3299元起</p>
-                   </div>
-               </li>
-               <li class="product3">
-                   <div class="pro">
-                       <a href="" id="pro3">
-                           <img src="img/9286b9a5-4055-9bea-e094-3cfb9ebf56ff.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
-                       </a>
-                       <h3>小米MIX2</h3>
-                       <h4>全面屏2.0,5.99大屏</h4>
-                       <p>3299元起</p>
-                   </div>
-               </li>
-               <li class="product4">
-                   <div class="pro">
-                       <a href="" id="pro4">
-                           <img src="img/T1K8hjB7ET1RXrhCrK.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
-                       </a>
-                       <h3>小米MIX2</h3>
-                       <h4>全面屏2.0,5.99大屏</h4>
-                       <p>3299元起</p>
-                   </div>
-               </li>
-               <li class="product5">
-                   <div class="pro">
-                       <a href="" id="pro5">
-                           <img src="img/pms_1508850965.67096774!220x220.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
-                       </a>
-                       <h3>小米MIX2</h3>
-                       <h4>全面屏2.0,5.99大屏</h4>
-                       <p>3299元起</p>
-                   </div>
-               </li>
-           </ul>
+            <div class="product_box">
+                <div class="product_box1 product3">
+                    <p>12：00场</p>
+                    <img src="img/flashpurchase.png" alt="">
+                    <span>距开始还有</span>
+                    <div class="product_box1_time">
+                        <div class="product_box1_time_box">00</div>
+                        <div class="product_box1_time_dosh">:</div>
+                        <div class="product_box1_time_box">00</div>
+                        <div class="product_box1_time_dosh">:</div>
+                        <div class="product_box1_time_box">00</div>
+                    </div>
+                </div>
+                <div class="listUl">
+                    <ul>
+                        <li class="product1">
+                            <a href=""></a>
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg" width="160px" height="160px"  alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product1">
+                            <a href=""></a>
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg" width="160px" height="160px"  alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product1">
+                            <a href=""></a>
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg" width="160px" height="160px"  alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product2">
+                            <div class="pro">
+                                <a href="" >
+                                    <img src="img/312cd1f8-2255-cbb1-9cb3-3e24fc6ab571.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product2">
+                            <div class="pro">
+                                <a href="" >
+                                    <img src="img/312cd1f8-2255-cbb1-9cb3-3e24fc6ab571.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product3">
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/9286b9a5-4055-9bea-e094-3cfb9ebf56ff.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product4">
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/T1K8hjB7ET1RXrhCrK.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                        <li class="product5">
+                            <div class="pro">
+                                <a href="">
+                                    <img src="img/pms_1508850965.67096774!220x220.jpg" width="160px" height="160px" alt="小米MIX2" title="小米MIX2">
+                                </a>
+                                <h3>小米MIX2</h3>
+                                <h4>全面屏2.0,5.99大屏</h4>
+                                <p>3299元起</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 <!--小米闪购结束-->
@@ -3983,13 +4038,7 @@
             <div class="content_eva_ad">
                 <ul>
                     <li class="product1 contentAd">
-                        <a href="" class="content_ad">
-                            <div class="san san_left">
-                                <i class="iconfont icon-left"></i>
-                            </div>
-                            <div class="san san_right">
-                                <i class="iconfont icon-right"></i>
-                            </div>
+                        <a href="" class="content_ad" style="left: 0;">
                             <h3 class="content_text1 content_color1">图书</h3>
                             <p class="content_text2">哈利·波特与被诅咒的孩子</p>
                             <div class="content_text3">
@@ -3999,25 +4048,47 @@
                             <div class="content_img">
                                 <img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.png" width="216px" height="154px" alt="">
                             </div>
-                            <div class="content_yuan">
-                                <ul>
-                                    <li class="content_marl">
-                                        <span></span>
-                                    </li>
-                                    <li><span></span></li>
-                                    <li><span></span></li>
-                                </ul>
+                        </a>
+                        <a href="" class="content_ad" >
+                            <h3 class="content_text1 content_color1">图书</h3>
+                            <p class="content_text2">哈利·波特与被诅咒的孩子</p>
+                            <div class="content_text3">
+                                “哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+                            </div>
+                            <h4>30</h4>
+                            <div class="content_img">
+                                <img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.png" width="216px" height="154px" alt="">
                             </div>
                         </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color1">图书</h3>
+                            <p class="content_text2">哈利·波特与被诅咒的孩子</p>
+                            <div class="content_text3">
+                                “哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+                            </div>
+                            <h4>40</h4>
+                            <div class="content_img">
+                                <img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.png" width="216px" height="154px" alt="">
+                            </div>
+                        </a>
+                        <div class="content_yuan">
+                            <ul>
+                                <li class="content_marl">
+                                    <span style="border : 2px solid #ff6700;"></span>
+                                </li>
+                                <li><span></span></li>
+                                <li><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="san san_left">
+                            <i class="iconfont icon-left"></i>
+                        </div>
+                        <div class="san san_right">
+                            <i class="iconfont icon-right"></i>
+                        </div>
                     </li>
                     <li class="product2 contentAd">
-                        <a href="" class="content_ad">
-                            <div class="san san_left">
-                                <i class="iconfont icon-left"></i>
-                            </div>
-                            <div class="san san_right">
-                                <i class="iconfont icon-right"></i>
-                            </div>
+                        <a href="" class="content_ad" style="left: 0;">
                             <h3 class="content_text1 content_color2">MIUI 主题</h3>
                             <p class="content_text2">复仇者联盟3</p>
                             <div class="content_text3">
@@ -4027,7 +4098,28 @@
                             <div class="content_img">
                                 <img src="img/xmad_1525241154775_RXyBJ.png" width="216px" height="154px" alt="">
                             </div>
-                            <div class="content_yuan">
+                        </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color2">MIUI 主题</h3>
+                            <p class="content_text2">复仇者联盟3</p>
+                            <div class="content_text3">
+                                漫威电影宇宙10周年，定制主题上线！漫威粉丝不容错过！
+                            </div>
+                            <h4>6.2米币</h4>
+                            <div class="content_img">
+                                <img src="img/xmad_1525241154775_RXyBJ.png" width="216px" height="154px" alt="">
+                            </div>
+                        </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color2">MIUI 主题</h3>
+                            <p class="content_text2">复仇者联盟3</p>
+                            <div class="content_text3">
+                                漫威电影宇宙10周年，定制主题上线！漫威粉丝不容错过！
+                            </div>
+                            <h4>7.2米币</h4>
+                            <div class="content_img">
+                                <img src="img/xmad_1525241154775_RXyBJ.png" width="216px" height="154px" alt="">
+                            </div>
                                 <ul>
                                     <li class="content_marl">
                                         <span></span>
@@ -4039,17 +4131,25 @@
                                         <span></span>
                                     </li>
                                 </ul>
-                            </div>
                         </a>
+                        <div class="content_yuan">
+                            <ul>
+                                <li class="content_marl" >
+                                    <span style="border : 2px solid #ff6700;"></span>
+                                </li>
+                                <li><span></span></li>
+                                <li><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="san san_left">
+                            <i class="iconfont icon-left"></i>
+                        </div>
+                        <div class="san san_right">
+                            <i class="iconfont icon-right"></i>
+                        </div>
                     </li>
                     <li class="product3 contentAd">
-                        <a href="" class="content_ad">
-                            <div class="san san_left">
-                                <i class="iconfont icon-left"></i>
-                            </div>
-                            <div class="san san_right">
-                                <i class="iconfont icon-right"></i>
-                            </div>
+                        <a href="" class="content_ad" style="left: 0;">
                             <h3 class="content_text1 content_color3">游戏</h3>
                             <p class="content_text2">剑侠世界2</p>
                             <div class="content_text3">
@@ -4059,29 +4159,47 @@
                             <div class="content_img">
                                 <img src="img/xmad_15175523589542_niohb.png" width="216px" height="154px" alt="">
                             </div>
-                            <div class="content_yuan">
-                                <ul>
-                                    <li class="content_marl">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <span></span>
-                                    </li>
-                                </ul>
+                        </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color3">游戏</h3>
+                            <p class="content_text2">剑侠世界2</p>
+                            <div class="content_text3">
+                                潮流武侠，炫动江湖！
+                            </div>
+                            <h4>   </h4>
+                            <div class="content_img">
+                                <img src="img/xmad_15175523589542_niohb.png" width="216px" height="154px" alt="">
                             </div>
                         </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color3">游戏</h3>
+                            <p class="content_text2">剑侠世界2</p>
+                            <div class="content_text3">
+                                潮流武侠，炫动江湖！
+                            </div>
+                            <h4>   </h4>
+                            <div class="content_img">
+                                <img src="img/xmad_15175523589542_niohb.png" width="216px" height="154px" alt="">
+                            </div>
+                        </a>
+                        <div class="content_yuan">
+                            <ul>
+                                <li class="content_marl" >
+                                    <span style="border : 2px solid #ff6700;"></span>
+                                </li>
+                                <li><span></span></li>
+                                <li><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="san san_left">
+                            <i class="iconfont icon-left"></i>
+                        </div>
+                        <div class="san san_right">
+                            <i class="iconfont icon-right"></i>
+                        </div>
                     </li>
                     <li class="product4 contentAd">
-                        <a href="" class="content_ad">
-                            <div class="san san_left">
-                                <i class="iconfont icon-left"></i>
-                            </div>
-                            <div class="san san_right">
-                                <i class="iconfont icon-right"></i>
-                            </div>
+                        <a href="" class="content_ad"  style="left: 0;">
                             <h3 class="content_text1 content_color4">应用</h3>
                             <p class="content_text2">2017金米奖</p>
                             <div class="content_text3">
@@ -4091,20 +4209,44 @@
                             <div class="content_img">
                                 <img src="img/3332da7d-4056-4694-9548-c83b7b3af7d3.png" width="216px" height="154px" alt="">
                             </div>
-                            <div class="content_yuan">
-                                <ul>
-                                    <li class="content_marl">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <span></span>
-                                    </li>
-                                </ul>
+                        </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color4">应用</h3>
+                            <p class="content_text2">2017金米奖</p>
+                            <div class="content_text3">
+                                最优秀的应用和游戏
+                            </div>
+                            <h4 >   </h4>
+                            <div class="content_img">
+                                <img src="img/3332da7d-4056-4694-9548-c83b7b3af7d3.png" width="216px" height="154px" alt="">
                             </div>
                         </a>
+                        <a href="" class="content_ad">
+                            <h3 class="content_text1 content_color4">应用</h3>
+                            <p class="content_text2">2017金米奖</p>
+                            <div class="content_text3">
+                                最优秀的应用和游戏
+                            </div>
+                            <h4 >   </h4>
+                            <div class="content_img">
+                                <img src="img/3332da7d-4056-4694-9548-c83b7b3af7d3.png" width="216px" height="154px" alt="">
+                            </div>
+                        </a>
+                        <div class="content_yuan">
+                            <ul>
+                                <li class="content_marl" >
+                                    <span style="border : 2px solid #ff6700;"></span>
+                                </li>
+                                <li><span></span></li>
+                                <li><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="san san_left">
+                            <i class="iconfont icon-left"></i>
+                        </div>
+                        <div class="san san_right">
+                            <i class="iconfont icon-right"></i>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -4325,28 +4467,8 @@
         </ul>
     </section>
 <!--页面跳转部分结束-->
-<script src="js/swiper-4.1.6.min.js"></script>
-<script>
-    var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-//        设置速度
-        autoplay : 3000,
-        speed:2000,
-        autoplayStopOnLast : true,
-        grabCursor : true,
 
-        // 如果需要分页器
-        pagination: '.swiper-pagination',
 
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-
-        // 如果需要滚动条
-//        scrollbar: '.swiper-scrollbar',
-    })
-</script>
 
 </body>
 </html>

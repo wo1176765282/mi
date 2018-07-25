@@ -89,6 +89,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     z-index: 1;
     transition: .2s;
     overflow: hidden;
+    z-index: 40;
 }
 
 
@@ -102,6 +103,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     margin:0 auto;
     position: relative;
     /*overflow: hidden;*/
+    z-index: 30;
 }
 #logo_ir{
     display: block;
@@ -288,7 +290,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     left:0;
     padding:20px 0 0 0;
     box-sizing: border-box;
-    z-index: 10;
+    z-index: 20;
 }
 #banner_left a{
     display: block;
@@ -371,6 +373,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     right:35px;
     display: flex;
     justify-content: space-between;
+    z-index: 9;
 }
 .circle li{
     width:6px;
@@ -379,7 +382,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     border-radius: 50%;
     border:2px solid #6183a9;
 }
-.btn_left{
+.btn_left a{
     display: block;
     width:41px;
     height:69px;
@@ -394,8 +397,9 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     margin-top: auto;
     margin-bottom: auto;
     background: url("../img/icon-slides.png") no-repeat -83px 0;
+    z-index: 10;
 }
-.btn_right{
+.btn_right a{
     display: block;
     width: 41px;
     height:69px;
@@ -407,11 +411,12 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     margin-top: auto;
     margin-bottom: auto;
     background: url("../img/icon-slides.png") no-repeat -125px 0;
+    z-index: 10;
 }
-.btn_left:hover{
+.btn_left a:hover{
     background: url("../img/icon-slides.png") no-repeat 0 0;
 }
-.btn_right:hover{
+.btn_right a:hover{
     background: url("../img/icon-slides.png") no-repeat -42px 0;
 }
 #banner_right{
@@ -574,6 +579,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     height: 339px;
     /*background: #eee;*/
 }
+
 .product1{
     border-top: 1px solid red;
 }
@@ -589,19 +595,86 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
 .product5{
     border-top: 1px solid black;
 }
-.product ul li{
+.product_box{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+.product_box1{
+    width:234px;
+    height: 300px;
+    padding-top: 39px;
+    float: left;
+    text-align: center;
+    background: #fafafa;
+}
+.product_box1 p{
+    font-size: 21px;
+    color: #ef3a3b;
+}
+.product_box1 img{
+    width: 34px;
+    height: 53px;
+    margin: 25px auto;
+}
+.product_box1 span{
     display: block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333;
+}
+.product_box1_time{
+    width: 168px;
+    height: 46px;
+    margin: 28px 33px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.product_box1_time_box{
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    background: #605751;
+    font-size: 24px;
+    line-height: 46px;
+    color: #fff;
+}
+.product_box1_time_dosh{
+    font-size: 28px;
+    line-height: 46px;
+}
+.listUl{
+    width: 992px;
+    height: 100%;
+    float: left;
+    overflow-X:auto;
+}
+.listUl::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.listUl ul{
+    width: 1984px;
+    height: 100%;
+    background: #000;
+    float: left;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+.product ul li{
     width:234px;
     height: 300px;
     padding-top: 39px;
     background: #fafafa;
-    margin-right: 14px;
+    margin-left: 14px;
     float: left;
     text-align: center;
 }
-.product ul li:last-child{
+/*.product ul li:last-child{
     margin-right: 0;
-}
+}*/
 .pro{
     width:234px;
     height:263px;
@@ -616,32 +689,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     /*background: url("../img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg") no-repeat center;*/
     /*background-size: cover;*/
 }
-/*#pro1{*/
-    /*background: url("../img/eead143a-3672-f86b-75cc-06dcc1492c33.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-/*}*/
-/*#pro2{*/
-    /*background: url("../img/9286b9a5-4055-9bea-e094-3cfb9ebf56ff.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-/*}*/
-/*#pro3{*/
-    /*background: url("../img/312cd1f8-2255-cbb1-9cb3-3e24fc6ab571.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-/*}*/
-/*#pro4{*/
-    /*background: url("../img/T1K8hjB7ET1RXrhCrK.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-/*}*/
-/*#pro5{*/
-    /*background: url("../img/pms_1508850965.67096774!220x220.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-/*}*/
 
-/*.pro a img{*/
-    /*!*display: block;*!*/
-    /*width:160px;*/
-    /*height:160px;*/
-/*}*/
 .pro h3{
     font-size: 12px;
     line-height: 22px;
@@ -1020,14 +1068,14 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     margin-left: 24px;
     /*text-align: center;*/
     /*line-height: 18px;*/
-    color: #b0b0b0;
+    color: #757575;
     font-weight: 400;
 }
 .bottom_dong span{
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     /*line-height: 18px;*/
-    color: #b0b0b0;
+    color: #757575;
     font-weight: 400;
 }
 /*.electricalEquipment_text_right a:hover{*/
@@ -1142,6 +1190,8 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     background: #fff;
     margin-right: 14px;
     float: left;
+    position: relative;
+    overflow: hidden;
 }
 .content_eva_ad li:last-child{
     margin-right: 0;
@@ -1156,7 +1206,9 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     display: block;
     width: 296px;
     height: 420px;
-    position: relative;
+    position: absolute;
+    top: 45px;
+    left: 296px;
 }
 .san{
     display: block;
@@ -1168,8 +1220,8 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     background: rgba(0,0,0,.2);
     position: absolute;
     top:50%;
-    margin-top: -60px;
-    display: none;
+    margin-top: -25px;
+    /*display: none;*/
 }
 .san_left{
     left:0;
@@ -1218,8 +1270,8 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     width:296px;
     height:30px;
     margin: 0 auto;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
+    position: absolute;
+    bottom: 5px;
 }
 .content_yuan li{
     width: 10px;
@@ -1267,9 +1319,9 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     transform: translateY(-1px);
     transition: .2s;
 }
-.content_eva_ad ul .contentAd :hover .san{
+/*.content_eva_ad ul .contentAd :hover .san{
     display: block;
-}
+}*/
 .san:hover{
     background: rgba(0,0,0,.5);
 }
