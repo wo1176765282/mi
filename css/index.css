@@ -657,7 +657,6 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
 .listUl ul{
     width: 1984px;
     height: 100%;
-    background: #000;
     float: left;
     transition: all 1s;
     overflow: hidden;
