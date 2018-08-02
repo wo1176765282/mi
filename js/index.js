@@ -2,8 +2,6 @@ window.onload=function () {
     //购物车选项卡
     let head_right_shopping=document.getElementById("head_right_shopping");
     let head_right_shopping_car=document.getElementsByClassName("head_right_shopping_car")[0];
-    /*console.log(head_right_shopping_car);
-    console.log(head_right_shopping);*/
     head_right_shopping.onmouseenter=function () {
         head_right_shopping_car.style.height="86px";
         head_right_shopping_car.style.boxShadow="0 2px 5px 1px #999";
@@ -14,22 +12,41 @@ window.onload=function () {
     }
 
 
+//搜索框获取焦点
+    let input=document.querySelector("#nav_search input");
+    let searchBox_in=document.querySelector("#searchBox_in");
+    let search_box=document.querySelector("#search_box");
+    let search_box_list=document.querySelector(".search_box_list");
+    input.onfocus=function () {
+        searchBox_in.style.display="none";
+        input.style.fontSize="18px";
+        input.style.border="1px solid #ff6700";
+        search_box.style.border="1px solid #ff6700";
+        search_box.style.borderLeft="";
+        search_box_list.style.height='296px';
+        search_box_list.style.border='1px solid #ff6700';
+        search_box_list.style.borderTop='';
+    }
+    input.onblur=function () {
+        searchBox_in.style.display="block";
+        input.style.border="";
+        search_box.style.border="";
+        search_box_list.style.height=0;
+        search_box_list.style.border='';
+    }
 
 
     //banner侧导航部分aside
     let aside=document.getElementsByTagName("aside")[0];
     let lis=aside.getElementsByTagName("li");
     let aside_on_wrap=document.getElementsByClassName("aside_on_wrap");
-    // console.log(lis);
     for (let i=0;i<lis.length;i++){
         lis[i].onmouseenter=function () {
-            lis[i].style.background="#ff6700";
             aside_on_wrap[i].style.display="block";
             aside_on_wrap[i].style.boxShadow="-1px 3px 5px -1px #999";
             for (let j=0;j<lis.length;j++){
                 lis[j].onmouseleave=function(){
                     aside_on_wrap[j].style.display="none";
-                    lis[j].style.background="#b0b0b0";
                 }
             }
         }
@@ -38,32 +55,12 @@ window.onload=function () {
 
 
 //家电开始
-    /*let electricalEquipment_text=document.getElementsByClassName("electricalEquipment_text")[0];
-    let electricalEquipment_text_a=electricalEquipment_text.getElementsByTagName("a");
-    let max2=document.getElementsByClassName("max2");
 
-    for (let i=0;i<electricalEquipment_text_a.length;i++){
-        electricalEquipment_text_a[i].onmouseenter=function () {
-            for (let j=0;j<electricalEquipment_text_a.length;j++){
-                max2[j].style.display="none";
-                electricalEquipment_text_a[j].style.color="#333";
-                electricalEquipment_text_a[j].style.paddingBottom=0;
-                electricalEquipment_text_a[j].style.borderBottom="none";
-            }
-            max2[i].style.display="block";
-            electricalEquipment_text_a[i].style.color="#ff6700";
-            electricalEquipment_text_a[i].style.paddingBottom="2px";
-            electricalEquipment_text_a[i].style.borderBottom="2px solid #ff6700";
-
-        }
-
-    }*/
 
 //封装函数
     function xxk(floor,floor1) {
         let electricalEquipment_text_a=floor.getElementsByTagName("a");
         let max2=document.getElementsByClassName(floor1);
-
         for (let i=0;i<electricalEquipment_text_a.length;i++){
             electricalEquipment_text_a[i].onmouseenter=function () {
                 for (let j=0;j<electricalEquipment_text_a.length;j++){
@@ -91,14 +88,10 @@ window.onload=function () {
     let nav_text=document.getElementById('nav_text');
     let nav_text_a=nav_text.getElementsByTagName('a');
     let nav_text_box=document.getElementsByClassName('nav_text_box');
-    // console.log(nav_text_a);
-    // console.log(nav_text_box);
     for (let i=0;i<nav_text_a.length-2;i++){
-        // nav_text_box[i].style.height="230px";
         nav_text_a[i].onmouseenter=function () {
             nav_text_box[i].style.height="230px";
             for (let j=0;j<nav_text_a.length-2;j++){
-                // nav_text_box[j].style.height=0;
                 nav_text_a[j].onmouseleave=function () {
                     nav_text_box[j].style.height="0";
                 }
@@ -108,16 +101,11 @@ window.onload=function () {
 
 
 //banner轮播图部分
-   /* let banner_bg_lis=document.querySelectorAll('.banner_bg li');
-    console.log(banner_bg_lis);*/
     let banner_bg=document.getElementsByClassName('banner_bg')[0];
     let banner_bg_lis=banner_bg.getElementsByTagName('li');
     let num=0;
     let btnS=document.querySelectorAll('.circle li')
-    /*let circle=document.getElementsByClassName('circle')[0];
-    let btnS=circle.getElementsByTagName('li');*/
-
-    let time=setInterval(lbt,2000);
+    let time=setInterval(lbt,2500);
     function lbt() {
         num++;
         if (num==banner_bg_lis.length){
@@ -192,8 +180,6 @@ window.onload=function () {
 
     function doubleBanner(a) {
         let contentAd = document.getElementsByClassName('contentAd')[a];
-        console.log(contentAd);
-        // let contentAd=document.getElementsByClassName('contentAd')[0];
         let product_a = contentAd.querySelectorAll('a');
         let now = 0;
         let next = 0;
@@ -202,8 +188,6 @@ window.onload=function () {
         let btns = content_yuan.querySelectorAll('span');
         let san_left = contentAd.querySelector('.san_left');
         let san_right = contentAd.querySelector('.san_right');
-        console.log(san_right, san_left);
-        console.log(btns);
         // let t = setInterval(move, 1000);
         //标记
         let flag = true;
@@ -265,13 +249,6 @@ window.onload=function () {
             flag = false;
             move();
         }
-
-       /* contentAd.onmouseenter = function () {
-            clearInterval(t);
-        }
-        contentAd.onmouseleave = function () {
-            t = setInterval(move, 1000);
-        }*/
         //小点点击
         for (let i = 0; i < product_a.length; i++) {
             btns[i].onclick = function () {
@@ -305,13 +282,8 @@ window.onload=function () {
     //小米闪购
     let str_text_right=document.getElementById('str_text_right');
     let str_text_right_a=str_text_right.querySelectorAll('a');
-    console.log(str_text_right_a);
     let lites=document.querySelector('.listUl ul');
-    /*let litesLi=document.querySelectorAll('.listUl li');
-    console.log(litesLi);*/
     let litesWidth=parseInt(getComputedStyle(lites,null).width)/2;
-    console.log(litesWidth);
-    console.log(lites);
     let times=0;
     str_text_right_a[1].onclick=function () {
         console.log(1);
@@ -320,7 +292,6 @@ window.onload=function () {
             times=1;
         }
         lites.style.transform=`translateX(-${litesWidth*times}px)`;
-        // console.log(times);
         }
     str_text_right_a[0].onclick=function () {
         times--;
@@ -330,6 +301,29 @@ window.onload=function () {
         lites.style.transform=`translateX(-${litesWidth*times}px)`;
         // console.log(times);
         }
+
+    //小米闪购倒计时
+    setInterval(Countdown,1000);
+    function Countdown() {
+        let arr=[];
+        let date=new Date();
+        let future=new Date(2018,6,26,20);
+        let newS=(future.getTime()-date.getTime())/1000
+        let hours=Math.floor(newS/(60*60));
+        let minute=Math.floor(newS/60-hours*60);
+        let second=Math.floor(newS-(hours*3600+minute*60));
+        arr.push(hours,minute,second);
+        let product_box1_time_box=document.querySelectorAll('.product_box1_time_box');
+        arr.forEach(function (element,index) {
+            if (element<=9){
+                arr[index]='0'+arr[index];
+            }
+            product_box1_time_box[index].innerText=arr[index];
+        })
+    }
+
+
+
 
 
 
