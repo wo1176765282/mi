@@ -35,6 +35,27 @@ window.onload=function () {
         search_box_list.style.border='';
     }
 
+    /*let search_box_a=document.querySelectorAll(".search_box_a");
+    search_box_a.forEach(function (element) {
+        element.onmouseenter=function () {
+            element.style.color="#fff";
+            element.style. background="#ff6700";
+        }
+        element.onmouseleave=function () {
+            element.style.color="";
+            element.style. background="";
+        }
+    })
+    let search_box_i=document.querySelector("#search_box i");
+    search_box.onmouseenter=function () {
+        search_box_i.style.color="#fff";
+        search_box.style. background="#ff6700";
+    }
+    search_box.onmouseleave=function () {
+        search_box_i.style.color="";
+        search_box.style. background="";
+    }*/
+
 
     //banner侧导航部分aside
     let aside=document.getElementsByTagName("aside")[0];
