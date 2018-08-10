@@ -316,7 +316,7 @@ window.onload=function () {
     function Countdown() {
         let arr=[];
         let date=new Date();
-        let future=new Date(2018,7,10,12);
+        let future=new Date(2018,7,10,16);
         let newS=(future.getTime()-date.getTime())/1000
         let hours=Math.floor(newS/(60*60));
         let minute=Math.floor(newS/60-hours*60);
