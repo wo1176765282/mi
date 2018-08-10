@@ -214,13 +214,17 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
     top: 25px;
     left:1px;
 }
-#nav_search:hover input{
+#nav_search input:hover {
     border: 1px solid #5a5a5a;
 }
-#nav_search:hover #search_box{
+#nav_search input:hover #search_box{
     border: 1px solid #5a5a5a;
     border-left: 0;
 }
+/*#nav_search #search_box:hover {
+    border: 1px solid #5a5a5a;
+    border-left: 0;
+}*/
 /*改变input  placeholder的属性*/
 /*::-webkit-input-placeholder { !* WebKit browsers *!*/
     /*color:    #999;*/
@@ -242,6 +246,7 @@ header #head_right_shopping:hover i,header #head_right_shopping:hover span{
 }
 #search_box:hover{
     background: #ff6700;
+    border: 1px solid #ff6700;
 }
 #search_box:hover i{
     color: #fff;

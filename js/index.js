@@ -45,11 +45,12 @@ window.onload=function () {
             element.style.color="";
             element.style. background="";
         }
-    })
-    let search_box_i=document.querySelector("#search_box i");
+    })*/
+    /*let search_box_i=document.querySelector("#search_box i");
     search_box.onmouseenter=function () {
         search_box_i.style.color="#fff";
         search_box.style. background="#ff6700";
+        search_box.style. border="";
     }
     search_box.onmouseleave=function () {
         search_box_i.style.color="";
@@ -159,23 +160,19 @@ window.onload=function () {
     btn_right.onclick=function () {
         lbt();
         clearInterval(time);
-        time=setInterval(lbt,2000);
+        time=setInterval(lbt,2500);
     }
     btn_left.onclick=function () {
         lbt1();
         clearInterval(time);
-        time=setInterval(lbt1,2000);
+        time=setInterval(lbt1,2500);
     }
-
-
-
     banner_bg.onmouseenter=function () {
         clearInterval(time);
     }
     banner_bg.onmouseleave=function () {
-        time=setInterval(lbt,2000);
+        time=setInterval(lbt,2500);
     }
-
 
         //点击圆点
      for (let i=0;i<btnS.length;i++){
@@ -189,16 +186,11 @@ window.onload=function () {
                 num=i;
             }
      }
-
-
-
-
         //内容二维下标轮播
     doubleBanner(0);
     doubleBanner(1);
     doubleBanner(2);
     doubleBanner(3);
-
     function doubleBanner(a) {
         let contentAd = document.getElementsByClassName('contentAd')[a];
         let product_a = contentAd.querySelectorAll('a');
@@ -298,8 +290,6 @@ window.onload=function () {
         }
 
     }
-
-
     //小米闪购
     let str_text_right=document.getElementById('str_text_right');
     let str_text_right_a=str_text_right.querySelectorAll('a');
@@ -328,7 +318,7 @@ window.onload=function () {
     function Countdown() {
         let arr=[];
         let date=new Date();
-        let future=new Date(2018,6,26,20);
+        let future=new Date(2018,7,10,12);
         let newS=(future.getTime()-date.getTime())/1000
         let hours=Math.floor(newS/(60*60));
         let minute=Math.floor(newS/60-hours*60);
