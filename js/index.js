@@ -127,10 +127,10 @@ window.onload=function () {
     let banner_bg_lis=banner_bg.getElementsByTagName('li');
     let num=0;
     let btnS=document.querySelectorAll('.circle li')
-    let time=setInterval(lbt,2500);
+    let time=setInterval(lbt,2000);
     function lbt() {
         num++;
-        if (num==banner_bg_lis.length){
+        if (num>=banner_bg_lis.length){
             num=0;
         }
         for (let i=0;i<banner_bg_lis.length;i++){
@@ -142,7 +142,7 @@ window.onload=function () {
     }
     function lbt1() {
         num--;
-        if (num==-1){
+        if (num<0){
             num=banner_bg_lis.length-1;
         }
         for (let i=0;i<banner_bg_lis.length;i++){
@@ -153,25 +153,23 @@ window.onload=function () {
         banner_bg_lis[num].style.zIndex='9';
         btnS[num].style.background='#fff';
     }
-
     let btn_left=document.getElementsByClassName('btn_left')[0];
     let btn_right=document.getElementsByClassName('btn_right')[0];
-    // console.log(btn_left, btn_right);
     btn_right.onclick=function () {
         lbt();
         clearInterval(time);
-        time=setInterval(lbt,2500);
+        time=setInterval(lbt,2000);
     }
     btn_left.onclick=function () {
         lbt1();
         clearInterval(time);
-        time=setInterval(lbt1,2500);
+        time=setInterval(lbt1,2000);
     }
     banner_bg.onmouseenter=function () {
         clearInterval(time);
     }
     banner_bg.onmouseleave=function () {
-        time=setInterval(lbt,2500);
+        time=setInterval(lbt,2000);
     }
 
         //点击圆点
